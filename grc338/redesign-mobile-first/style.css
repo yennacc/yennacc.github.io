@@ -1,15 +1,27 @@
 body{
-    background: #F4FDFF;
+    background: #F3EBDF;
     margin: auto;
 }
+
 img {width: 100%; }
 
 a{
     text-decoration: none;
 }
 
+h1, h3{
+    margin: 0;
+}
+
+p{
+    margin:0;
+}
+
 .headercontent img{
-    width: 30%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mainmenu ul{
@@ -18,14 +30,34 @@ a{
 
 .mainmenu li{
     float: left;
-    margin-right: 1em;
+    margin: 1.5em 1em;
     text-transform: uppercase;
 }
 
-.mainmenu a{
-    font-size: 1.5em;
+.menuitems h1, h5, h6{
+    text-align: center;
 }
 
-.menuitems{
+.menuitems ul{
+    list-style-type: none;
+}
+
+.menuitems li{
+    width: 40%;
+    display: inline-block;
+    margin: auto 2em;
+}
+
+.footercontent ul{
+    list-style-type: none;
+}
+
+.footercontent li{
+    float: left;
+    margin: 1.5em 1em;
+    text-transform: uppercase;
+}
+
+.menuitems h1, h5, footer{
     clear:both;
 }
