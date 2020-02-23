@@ -1,0 +1,18 @@
+body{
+    background: #F4FDFF;
+}
+img {width: 100%; }
+
+a{
+    text-decoration: none;
+}
+
+.mainmenu ul{
+    list-style-type: none;
+}
+
+.mainmenu li{
+    float: left;
+    margin-right: 2em;
+    text-transform: uppercase;
+}
