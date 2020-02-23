@@ -1,5 +1,6 @@
 body{
     background: #F4FDFF;
+    margin: auto;
 }
 img {width: 100%; }
 
@@ -9,7 +10,6 @@ a{
 
 .headercontent img{
     width: 30%;
-    
 }
 
 .mainmenu ul{
@@ -18,6 +18,14 @@ a{
 
 .mainmenu li{
     float: left;
-    margin-right: 2em;
+    margin-right: 1em;
     text-transform: uppercase;
+}
+
+.mainmenu a{
+    font-size: 1.5em;
+}
+
+.menuitems{
+    clear:both;
 }
