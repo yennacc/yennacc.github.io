@@ -9,6 +9,11 @@ img {
 
 a{
     text-decoration: none;
+    color: #472D13;
+}
+
+a:active {
+    color: #F56159;
 }
 
 h1, h3{
@@ -38,8 +43,9 @@ p{
 
 .mainmenu li{
     display: inline-block;
-    margin: auto;
-    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
     text-transform: uppercase;
 }
 
@@ -61,14 +67,12 @@ div.menuitems{
     list-style-type: none;
 }
 
-@media only screen and (min-width: 25em){
-    .menuitems li{
+.menuitems li{
         width:  40%;
         padding: 0;
         display: inline-block;
         margin: 2em 1em;
         border-top: 1px solid rgb (0,0,0);
-    }
 }
 
 .footercontent ul{
