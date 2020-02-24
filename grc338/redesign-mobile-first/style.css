@@ -16,18 +16,43 @@ a:active {
     color: #F56159;
 }
 
-h1, h3{
+h1, h3, h4, h5, h6{
     margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    margin: 1em 0 0.5em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+h4{
+    margin-top: 0.3em;
+    font-size: 0.9em;
 }
 
 p{
     margin: 0;
 }
 
+p.price{
+    margin-top: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    color: #663E1C;
+}
+
+.menuitems p{
+    text-align: center;
+}
+
 .headercontent{
     box-shadow: 0 0.1em 0.1em #A6A6A6;
     background-color: #FFFFFF;
     margin: 0;
+    width: 100%;
 }
 
 .headercontent img{
@@ -37,47 +62,93 @@ p{
     margin-right: auto;
 }
 
-.mainmenu ul{
+.mainmenu ul, .footercontent ul, .contactus ul{
     list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .mainmenu li{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5em;
+    padding:  0.5em 0.5em;
     text-transform: uppercase;
-}
-
-div.menuitems{
-    width: 94%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .menuitems img{
     box-shadow: 0 0.1em 0.4em #A6A6A6;
-    margin: 0;
 }
 
-.menuitems h1, h5, h6{
-    text-align: center;
+.menuitems h5{
+    margin-top: 0;
+    margin-bottom: 1.5em;
 }
 
 .menuitems ul{
     list-style-type: none;
+    padding: 0;
 }
 
 .menuitems li{
-    width:  40%;
+    width: 45%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
     padding: 0 0.5em;
 }
 
-.footercontent ul{
+.servicesmenu ul{
     list-style-type: none;
+    padding: 0 2em;
+}
+
+.servicesmenu li{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+.servicesmenu h3{
+    text-align: center;
+    margin-top: 0;
+}
+
+.contactus img, .contactus li{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.contactus img{
+    background-color: #FFFFFF;
+}
+
+.contactus li{
+    padding: 0 1em 1em;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-radius: 1em;
+    border-color: #663E1C;
+}
+
+.contactus h3{
+    margin-top: 0.5em;
+}
+
+footer{
+    margin-bottom: 1em;
+}
+
+.footercontent ul{
+    margin: 1em auto;
+    background-color: #663E1C;
 }
 
 .footercontent li{
@@ -85,8 +156,12 @@ div.menuitems{
     margin-left: auto;
     margin-right: auto;
     padding: 0.5em;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 0.8em;
+}
+
+.footercontent a{
+    color: #FFFFFF;
 }
 
 .menuitems h1, h5, footer{
