@@ -23,7 +23,7 @@ h1, h3, h4, h5, h6{
 }
 
 h1{
-    margin: 1em 0 0.5em;
+    margin: 1em 0;
     text-transform: uppercase;
     font-size: 1.3em;
 }
@@ -43,6 +43,10 @@ p.price{
     text-align: center;
     font-weight: bold;
     color: #663E1C;
+}
+
+p.phone{
+    margin: 0.5em 0 1em;
 }
 
 .menuitems p{
@@ -106,7 +110,7 @@ p.price{
 }
 
 .servicesmenu li{
-    width: 30%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -114,13 +118,15 @@ p.price{
     padding: 0 1em;
 }
 
-.servicesmenu h3{
-    text-align: center;
-    margin-top: 0;
+.servicesmenu img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contactus img, .contactus li{
-    width: 80%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -139,12 +145,17 @@ p.price{
     border-color: #663E1C;
 }
 
-.contactus h3{
-    margin-top: 0.5em;
+.contactus h3, .servicesmenu h3{
+    margin: 0.3em 0;
 }
 
 footer{
     margin-bottom: 1em;
+}
+
+div.footercontent{
+    margin-bottom: 0;
+    background-color: #663E1C;
 }
 
 .footercontent ul{
@@ -161,10 +172,10 @@ footer{
     font-size: 0.8em;
 }
 
-.footercontent a{
+.footercontent a, h6{
     color: #FFFFFF;
 }
 
-.menuitems h1, h5, footer{
+.menuitems h1, h5{
     clear:both;
 }
