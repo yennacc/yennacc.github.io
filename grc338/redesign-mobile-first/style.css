@@ -66,16 +66,18 @@ div.headercontent{
 
 .menuitems ul, .contactus ul, .services ul{
     list-style-type: none;
+    text-align: center;
     margin: 0 auto 1em;
     padding: 0;
 }
 
 .mainmenu ul{
     list-style-type: none;
+    text-align: center;
+    padding: 0;
 }
 
 .mainmenu li{
-    text-align: center;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -118,12 +120,14 @@ div.headercontent{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
+    padding: 0;
 }
 
 .servicesmenu img{
     width: 30%;
     display: block;
     margin: 1em auto 0;
+    padding: auto 0;
 }
 
 .contactus img, .contactus li{
@@ -146,6 +150,7 @@ div.headercontent{
 
 .contactus h3, .servicesmenu h3{
     margin: 0.3em 0;
+    padding: auto 0;
 }
 
 div.footercontent{
@@ -155,14 +160,16 @@ div.footercontent{
 
 .footercontent ul{
     list-style-type: none;
+    text-align: center;
     margin: 1em auto 0;
+    padding: 0;
 }
 
 .footercontent li{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1em;
+    padding-left: 0.2em;
     text-align: center;
     text-transform: lowercase;
 }
