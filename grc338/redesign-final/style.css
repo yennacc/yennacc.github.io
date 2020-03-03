@@ -1,0 +1,216 @@
+body{
+    background: #F3EBDF;
+    margin: 0;
+    font-family: 'Kalam', 'Helvetica', serif;
+    font-family: 'El Messiri', 'Helvetica', serif;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #663E1C;
+}
+
+.mainmenu a:hover, .footercontent a:hover{
+    color: #F3EBDF;
+}
+
+h1, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+p{
+    text-align: center;
+    margin: 0;
+}
+
+p.price{
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Kalam', 'Helvetica', serif;
+    font-weight: 400;
+    color: #663E1C;
+}
+
+p.phone{
+    margin: 0 0 1em;
+}
+
+div.headercontent{
+    box-shadow: 0 0.1em 0.1em #A6A6A6;
+    background-color: #FFFFFF;
+    padding-top: 1em;
+    margin: 0 auto 1em;
+}
+
+.headercontent img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.mainmenu{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 25em){
+    .mainmenu a{
+        font-size: 1em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 35em){
+    .mainmenu a{
+        font-size: 1.6em;
+    }
+    .menuitems h4, .menuitems h5, .menuitems p{
+        font-size: 1.5em;
+    }
+}
+
+.mainmenu ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.mainmenu li{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right:  0.2em;
+    padding-left: 0.2em;
+    text-transform: uppercase;
+}
+
+div.menuitems{
+    max-width: 70em;
+    margin: auto;
+}
+
+@media only screen and (min-width: 20em){
+    .menuitems li{
+        width: 44%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        padding: 0 0.5em;
+    }
+}
+
+.menuitems ul, .contactus ul, .services ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto 1em;
+    padding: 0;
+}
+
+.menuitems img{
+    box-shadow: 0 0.1em 0.4em #A6A6A6;
+    margin-top: 1em;
+}
+
+.menuitems h1{
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.menuitems h4{
+    margin-bottom: 0;
+    font-family: 'Kalam', 'Helvetica', serif;
+    font-weight: 300;
+}
+
+.menuitems h5{
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.menuitems p{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.servicesmenu li{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+.servicesmenu img{
+    max-width:  5em;
+    display: block;
+    margin: 1em auto 0;
+    padding: auto 0;
+}
+
+.contactus img, .contactus li{
+    width: 85%;
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.contactus li{
+    max-width: 20em;
+    padding: 0 0.5em 1em;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-radius: 1em;
+    border-color: #663E1C;
+}
+
+.contactus h3, .servicesmenu h3{
+    margin: 0.3em 0;
+    padding: auto 0;
+}
+
+div.footercontent{
+    margin: 1em auto 0;
+    background-color: #663E1C;
+    padding: 0.5em 0;
+}
+
+.footercontent ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 1em auto 0;
+    padding: 0;
+}
+
+.footercontent li{
+    display: inline-block;
+    margin: 0 auto 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.footercontent a, h6{
+    color: #FFFFFF;
+}
+
+.menuitems h1, h5{
+    clear:both;
+}
