@@ -15,9 +15,6 @@ html {
 img {
 	display: block;
 	max-width: 100%;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }
 
 body {
@@ -26,18 +23,14 @@ body {
 	line-height: 1.6;
 	min-height: 100vh;
 	/* 100 viewport height */
-	background: blue;
+	background: #FFE2DE;
 }
-
-
-/* Photo by Unsplash */
 
 .hero {
 	background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80") center;
 	background-size: cover;
 	padding: 4rem 2rem;
 }
-
 
 .hero {
 	display: grid;
@@ -56,7 +49,7 @@ body {
 
 .inner-hero>h1 {
 	color: white;
-	font-size: 4rem;
+	font-size: 3.7rem;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -100,18 +93,6 @@ body {
 
 .start a:hover {
 	color: #F8BF75;
-}
-
-@media (min-width: 600px) {
-	.inner-hero {
-		grid-column: 3;
-	}
-}
-
-@media (min-width: 1000px) {
-	.inner-hero {
-		grid-column: 1;
-	}
 }
 
 .flex-container {
@@ -184,46 +165,6 @@ body {
 	border-bottom: none;
 }
 
-@media only screen and (min-width: 35em) {
-	body {
-		background-color: purple;
-	}
-	/* change flex direction to horizontal and space things out */
-	.main-nav {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	/* remove borders on top and bottom */
-	.main-nav a {
-		border-top: 0;
-		border-bottom: 0;
-	}
-}
-
-
-/* Desktop Styles */
-
-@media only screen and (min-width: 60em) {
-	body {
-		background-color: orange;
-	}
-	.logo {
-		margin-left: 20px;
-	}
-	/* put logo and main nav on same line */
-	.flex-container {
-		flex-direction: row;
-	}
-	/* move the list to the right side of the browser */
-	.main-nav {
-		justify-content: flex-end;
-	}
-	/* add some padding to give the main nav some breathing room */
-	.main-nav a {
-		padding: 1em;
-	}
-}
-
 
 /* make the Section class cards here.  */
 
@@ -242,9 +183,9 @@ body {
 	flex-direction: column;
 	min-width: 250px;
 	max-width: 350px;
-	border: 1px solid grey;
+	border: 1px solid #F8BF75;
 	border-radius: 0.5em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	margin: 10px;
 	position: relative;
 	top: 0;
@@ -270,9 +211,9 @@ body {
 /* typography */
 
 .cardH1 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0;
-	color: gray;
+	color: #8C4F04;
 }
 
 .card p {
@@ -281,9 +222,9 @@ body {
 }
 
 .card footer {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
-	color: #999;
+	color: #F8BF75;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
@@ -295,7 +236,7 @@ article {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 article>p {
@@ -303,63 +244,159 @@ article>p {
 }
 
 .columns {
-  background-color: #fefefe;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-  padding-top: 2em;
-  justify-content: center;
-  align-content: center;
+	background-color: #fefefe;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+	margin: 0 auto;
+	padding: 2em;
+	max-width: 700px;
+	justify-content: center;
 }
 
-.columns img{
-    width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 600px;
-  margin: 0 auto;
+.columns img {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 560px;
 }
 
-
-/* media queries */
-
-@media (min-width: 800px) {
+@media only screen and (min-width: 560px) {
+	.inner-hero {
+		grid-column: 3;
+	}
+	body {
+		background-color: white;
+	}
+	.main-nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.main-nav a {
+		border-top: 0;
+		border-bottom: 0;
+	}
+	/* Columns and Grids */
 	.columns {
-		background: blue;
+		background: white;
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
 	}
 	.image.one {
 		grid-column: 1;
 		grid-row: 1;
 	}
-	.text.one {}
+	.text.one {
+		grid-column: 2;
+		grid-row: 1;
+	}
 	.image.two {
 		grid-column: 2;
 		grid-row: 2;
 	}
-	.text.two {}
-	.image.three {}
-	.text.three {}
-}
-
-@media (min-width: 1200px) {
-	.columns {
-		background: red;
-        max-width: 1200px;
-        margin: 2em auto;
-		grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-	}
-	.image.one {
-	}
-	.text.one {
-	}
-	.image.two {
-	}
 	.text.two {
+		grid-column: 1;
+		grid-row: 2;
 	}
 	.image.three {
+		grid-column: 1;
+		grid-row: 3;
 	}
 	.text.three {
+		grid-column: 2;
+		grid-row: 3;
+	}
+	.image.four {
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.text.four {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.image.five {
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.text.five {
+		grid-column: 2;
+		grid-row: 5;
+	}
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1200px) {
+	.inner-hero {
+		grid-column: 1;
+	}
+	body {
+		background-color: black;
+	}
+	.logo {
+		margin-left: 20px;
+	}
+	/* put logo and main nav on same line */
+	.flex-container {
+		flex-direction: row;
+	}
+	/* move the list to the right side of the browser */
+	.main-nav {
+		justify-content: flex-end;
+	}
+	/* add some padding to give the main nav some breathing room */
+	.main-nav a {
+		padding: 1em;
+	}
+	.columns {
+		background: white;
+		max-width: 1100px;
+		margin: auto;
+		padding: auto;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+	}
+	.image.one {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.text.one {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.image.two {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.text.two {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.image.three {
+		grid-column: 2;
+		grid-row: 3;
+	}
+	.text.three {
+		grid-column: 3;
+		grid-row: 3;
+	}
+	.image.four {
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.text.four {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.image.five {
+		grid-column: 2;
+		grid-row: 5;
+	}
+	.text.five {
+		grid-column: 3;
+		grid-row: 5;
 	}
 }
