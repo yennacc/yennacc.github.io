@@ -1,0 +1,23 @@
+/* this will keep the images from over stretching */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* simple gallery */
+
+.photo-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
