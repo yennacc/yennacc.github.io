@@ -1,7 +1,7 @@
 /* Generic styles */
 
 html {
-	font-family: sans-serif;
+	font-family: 'Catamaran', sans-serif;
 	scroll-behavior: smooth;
 	text-rendering: optimizeLegibility;
 }
@@ -261,6 +261,80 @@ article>p {
 	height: 100%;
 	object-fit: cover;
 	max-width: 560px;
+}
+
+/* Parallax */
+
+.headerbox {
+    
+  height: 100vh;
+  position: relative;
+  background-image: url('../img/canada.JPG');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 280px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.title h1 {
+  color: white;
+  font-size: 7vw;
+}
+
+.transparent {
+  height: 10em;
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  margin-top: 5em;
+}
+
+.contents {
+  margin: 0 auto;
+  max-width: 90ch;
+  height: 50vh;
+  padding: 2rem;
+}
+
+.contents article {
+  padding-top: 50px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+.contents h1{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1rem;
+    color: #C78FAC;
+}
+
+.contents p{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1rem;
+    color: black;
+    margin-top: 1em;
+}
+
+.second-image {
+  position: relative;
+  height: 600px;
+  background-image: url('../img/pismo-beach.JPG');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 560px) {
