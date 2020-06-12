@@ -1,0 +1,509 @@
+/* Generic styles */
+
+html {
+	font-family: 'Catamaran', sans-serif;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+	margin: 0;
+	font-family: 'Catamaran', sans-serif;
+	line-height: 1.6;
+	min-height: 100vh;
+	/* 100 viewport height */
+	background: #FFE2DE;
+}
+
+.hero {
+	background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80") center;
+	background-size: cover;
+	padding: 4rem 2rem;
+}
+
+.hero {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-row: repeat(2, 1fr);
+	height: 100vh;
+}
+
+
+/* you can start to use your color palettes here for transparent background in rgba*/
+
+.inner-hero {
+	grid-column: 2;
+}
+
+.inner-hero>h1 {
+	color: white;
+	font-size: 3.7rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+/* you can start to use your color palettes here or pick a color from the background using the eyedropper tool in Firefox */
+
+.subhead {
+	color: #C78FAC;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+/* grids */
+
+.inner-hero {
+	background: rgba(0, 0, 10, 0.6);
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+
+.start {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 4em;
+	text-transform: uppercase;
+}
+
+.start a {
+	color: #C78FAC;
+	text-decoration: none;
+	border: 1px solid rgba(199, 143, 172, 1);
+	padding: 10px;
+}
+
+.start a:hover {
+	color: #C78FAC;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	font-weight: 300;
+}
+
+.logo a {
+	color: #00060D;
+}
+
+.logo {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+/* get rid of bullets on list and make text uppercase */
+
+.logo,
+.main-nav {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+
+/* get rid of underline on links */
+
+.logo a,
+.main-nav a {
+	text-decoration: none;
+	letter-spacing: 0.45rem;
+}
+
+.logo a:hover {
+	color: #C78FAC;
+}
+
+
+/* make main nav flex and make it vertical */
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.main-nav a {
+	display: block;
+	padding: 1em;
+	color: #C78FAC;
+}
+
+.main-nav a:hover {
+	background: #FFE2DE;
+}
+
+.main-nav a {
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-nav li:last-of-type a {
+	border-bottom: none;
+}
+
+
+/* make the Section class cards here.  */
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+/* make the card flex. The default is row so change flex direction to vertical. */
+
+.card {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	min-width: 250px;
+	max-width: 350px;
+	border: 1px solid #C78FAC;
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	margin: 10px;
+	position: relative;
+	top: 0;
+}
+
+.card:hover {
+	transition: all 0.1s ease-in;
+	top: -2px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cardphoto {
+	max-height: 250 px;
+	overflow: hidden;
+}
+
+.cardarticle {
+	padding: 2.5rem;
+	flex-grow: 1;
+}
+
+
+/* typography */
+
+.cardH1 {
+	font-size: 1.5rem;
+	margin: 0;
+	color: black;
+}
+
+.card p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.card footer {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #C78FAC;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+
+article {
+	background: white;
+	padding: 1rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+article>p {
+	line-height: 1.3;
+}
+
+.columns {
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+	margin: 0 auto;
+	padding: 2em;
+	max-width: 700px;
+	justify-content: center;
+}
+
+.columns img {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 560px;
+}
+
+/* Parallax */
+
+.headerbox {
+    
+  height: 100vh;
+  position: relative;
+  background-image: url('../img/canada.JPG');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 280px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.title h1 {
+  color: white;
+  font-size: 7vw;
+}
+
+.transparent {
+  height: 10em;
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  margin-top: 5em;
+}
+
+.transparent h2 {
+  font-size: 12vw;
+  text-align: end;
+  padding-right: 30px;
+  color: #C78FAC;
+}
+
+.content {
+  margin: 1px auto;
+  max-width: 90ch;
+  height: 50vh;
+  padding: 2rem;
+}
+
+.contents article {
+  padding-top: 50px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.3;
+    background-color: #E4F0F7;
+}
+
+.contents h1{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1rem;
+    color: #C78FAC;
+}
+
+.contents p{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1rem;
+    color: black;
+    margin-top: 1em;
+}
+
+.second-image {
+  position: relative;
+  height: 600px;
+  background-image: url('../img/pismo-beach.JPG');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* simple gallery */
+
+.photo-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media only screen and (min-width: 560px) {
+    .tall {
+        grid-row: span 2 / auto;
+    }
+    .wide {
+        grid-column: span 2 / auto;
+    }
+	.inner-hero {
+		grid-column: 3;
+	}
+	body {
+		background-color: #E4F0F7;
+	}
+	.main-nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.main-nav a {
+		border-top: 0;
+		border-bottom: 0;
+	}
+	/* Columns and Grids */
+	.columns {
+		background: #E4F0F7;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+	.image.one {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.text.one {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.image.two {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.text.two {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.image.three {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.text.three {
+		grid-column: 2;
+		grid-row: 3;
+	}
+	.image.four {
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.text.four {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.image.five {
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.text.five {
+		grid-column: 2;
+		grid-row: 5;
+	}
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1200px) {
+	.inner-hero {
+		grid-column: 1;
+	}
+	body {
+		background-color: #E4F0F7;
+	}
+	.logo {
+		margin-left: 20px;
+	}
+	/* put logo and main nav on same line */
+	.flex-container {
+		flex-direction: row;
+	}
+	/* move the list to the right side of the browser */
+	.main-nav {
+		justify-content: flex-end;
+	}
+	/* add some padding to give the main nav some breathing room */
+	.main-nav a {
+		padding: 1em;
+	}
+	.columns {
+		background: #E4F0F7;
+		max-width: 1100px;
+		margin: auto;
+		padding: auto;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+	}
+	.image.one {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.text.one {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.image.two {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.text.two {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.image.three {
+		grid-column: 2;
+		grid-row: 3;
+	}
+	.text.three {
+		grid-column: 3;
+		grid-row: 3;
+	}
+	.image.four {
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.text.four {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.image.five {
+		grid-column: 2;
+		grid-row: 5;
+	}
+	.text.five {
+		grid-column: 3;
+		grid-row: 5;
+	}
+}
